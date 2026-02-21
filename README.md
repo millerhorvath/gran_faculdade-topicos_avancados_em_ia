@@ -36,19 +36,33 @@ Certifique-se de ter o [Python](https://www.python.org/) instalado em seu sistem
 
 Abra o terminal ou prompt de comando, navegue até a pasta raiz deste projeto (`Lab/`) e execute:
 
+#### 2.1. Criando o ambiente virtual (opcional, mas recomendado)
+
 ```bash
-# Crie um ambiente virtual (opcional, mas recomendado)
 python -m venv venv
-
-# Ative o ambiente virtual
-# No Windows:
-venv\Scripts\activate
-# No Linux/macOS:
-source venv/bin/activate
-
-# Instale as dependências necessárias
-pip install -r requirements.txt
 ```
+
+##### 2.1.1 Ativando o ambiente virtual - Windows
+
+```bash
+venv\Scripts\activate
+```
+
+##### 2.1.2 Ativando o ambiente virtual - Linux/macOS
+
+```bash
+source venv/bin/activate
+```
+
+#### 2.2. Instalando as dependências
+
+```bash
+pip install -r requirements.txt
+
+# Registre o ambiente virtual como um Kernel no Jupyter
+python -m ipykernel install --user --name=venv_ia --display-name="Python (TAIA Lab)"
+```
+
 
 ### 3. Executando o Jupyter
 
@@ -61,6 +75,13 @@ jupyter lab
 ```
 
 Uma aba será aberta no seu navegador. Navegue até a pasta da aula para acompanhar os materiais.
+
+> 💡 **IMPORTANTE:** Ao abrir um Notebook pela primeira vez no Jupyter Lab, certifique-se de selecionar o kernel **"Python (TAIA Lab)"** no canto superior direito para que ele utilize todas as dependências do ambiente virtual corretamente.
+
+## ⚠️ Problemas Conhecidos
+
+Está enfrentando algum erro de "PSSecurityException" ou "MAX_PATH" durante a configuração? 
+Consulte nosso guia de resolução de problemas no arquivo [TROUBLESHOOTING.md](TROUBLESHOOTING.md) para soluções detalhadas.
 
 ---
 *Professor: Miller Horvath*
