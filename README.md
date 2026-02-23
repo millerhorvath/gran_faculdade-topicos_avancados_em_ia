@@ -10,6 +10,12 @@ Este repositório contém os materiais práticos (Jupyter Notebooks) e os script
     *   `03_teste_de_hipotese.ipynb`: Notebook prático sobre Fundamentos de Testes de Hipótese.
     *   `04_figura_normal_vs_t_student.ipynb`: Script visual de comparação entre as distribuições Normal e T de Student.
     *   `05_teste_hipotese_unilateral.ipynb`: Notebook prático sobre Testes de Hipótese Unilaterais.
+*   `aula_04_tratamento_de_dados/`: Contém os notebooks da Aula 4, abordando técnicas de tratamento e pré-processamento de dados para pipelines de IA. Os arquivos com o prefixo `figura_` são scripts focados na produção de figuras didáticas para o material da disciplina.
+    *   `01_figura_iqr_exemplo.ipynb`: Script visual sobre detecção de outliers utilizando o Intervalo Interquartil (IQR).
+    *   `02_figura_z_vs_iqr.ipynb`: Script comparativo entre os métodos de detecção de outliers Z-Score e IQR.
+    *   `03_figura_transformacao_log.ipynb`: Script visual sobre transformação logarítmica de variáveis.
+    *   `04_figura_transformacao_trigonometrica.ipynb`: Script visual sobre transformações trigonométricas de variáveis cíclicas.
+    *   `05_figura_transformacao_polinomial.ipynb`: Script visual sobre transformações polinomiais aplicadas a regressão linear.
 *   `data/`: Diretório ignorado no versionamento (`.gitignore`) que deverá abrigar os conjuntos de dados utilizados nos laboratórios (ver seção *Datasets* abaixo).
 *   `outputs/`: Diretório destinado ao armazenamento de gráficos e resultados gerados durante a execução dos scripts (ex: `outputs/figures/`).
 

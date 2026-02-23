@@ -35,3 +35,6 @@ env/
 *.jpeg
 outputs/
 figures/
+
+# Agent Files
+.agents/
