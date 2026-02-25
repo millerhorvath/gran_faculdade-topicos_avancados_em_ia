@@ -38,3 +38,19 @@ Se você deseja manter os arquivos no local original, você pode dizer para o Wi
 New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
 ```
 3. Volte ao seu terminal normal e tente rodar a instalação novamente.
+---
+
+### 3. Erro "fatal: bad object refs/desktop.ini" (Git + Google Drive)
+
+🚩 **Sintoma:** Ao tentar rodar comandos do Git (como `git pull`, `git push` ou `git commit`), você recebe um erro similar a `fatal: bad object refs/desktop.ini`.
+
+🔍 **Causa:** Quando o repositório Git está em uma pasta sincronizada pelo **Google Drive** no Windows, o Drive frequentemente cria arquivos ocultos chamados `desktop.ini` dentro das pastas do sistema do Git (como `.git/refs/`). O Git tenta interpretar esses arquivos como referências de commits, o que causa a falha.
+
+✅ **Solução:**
+Você deve remover esses arquivos de dentro da pasta oculta `.git`.
+1. Abra o Terminal ou PowerShell na raiz do seu projeto.
+2. Execute o comando abaixo para remover recursivamente todos os arquivos `desktop.ini` que estiverem dentro da pasta `.git`:
+```powershell
+Get-ChildItem -Path ".git" -Recurse -Filter "desktop.ini" -Force | Remove-Item -Force
+```
+3. Após rodar o comando, tente executar o comando Git original novamente.
