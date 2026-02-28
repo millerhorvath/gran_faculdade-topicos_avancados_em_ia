@@ -4,20 +4,29 @@ Este repositório contém os materiais práticos (Jupyter Notebooks) e os script
 
 ## 📂 Estrutura do Repositório
 
-*   `aula_03_estatistica/`: Contém os notebooks da Aula 3, abordando conceitos fundamentais de estatística para Ciência de Dados e IA. Os arquivos com o prefixo `figura_` são scripts focados na produção de figuras didáticas para o material da disciplina.
+*   `aula_03_estatistica/`: Contém os notebooks da Aula 3, abordando conceitos fundamentais de estatística para Ciência de Dados e IA.
     *   `01_figura_exploratory_data_analysis.ipynb`: Script de Análise Exploratória de Dados (EDA) para material didático.
     *   `02_figura_cdf_teste_ks.ipynb`: Script visual sobre Função Cumulativa de Distribuição (CDF) e Teste de Kolmogorov-Smirnov (KS).
     *   `03_teste_de_hipotese.ipynb`: Notebook prático sobre Fundamentos de Testes de Hipótese.
     *   `04_figura_normal_vs_t_student.ipynb`: Script visual de comparação entre as distribuições Normal e T de Student.
     *   `05_teste_hipotese_unilateral.ipynb`: Notebook prático sobre Testes de Hipótese Unilaterais.
-*   `aula_04_tratamento_de_dados/`: Contém os notebooks da Aula 4, abordando técnicas de tratamento e pré-processamento de dados para pipelines de IA. Os arquivos com o prefixo `figura_` são scripts focados na produção de figuras didáticas para o material da disciplina.
+*   `aula_04_tratamento_de_dados/`: Contém os notebooks da Aula 4, abordando técnicas de tratamento e pré-processamento de dados para pipelines de IA.
     *   `01_figura_iqr_exemplo.ipynb`: Script visual sobre detecção de outliers utilizando o Intervalo Interquartil (IQR).
     *   `02_figura_z_vs_iqr.ipynb`: Script comparativo entre os métodos de detecção de outliers Z-Score e IQR.
     *   `03_figura_transformacao_log.ipynb`: Script visual sobre transformação logarítmica de variáveis.
     *   `04_figura_transformacao_trigonometrica.ipynb`: Script visual sobre transformações trigonométricas de variáveis cíclicas.
     *   `05_figura_transformacao_polinomial.ipynb`: Script visual sobre transformações polinomiais aplicadas a regressão linear.
+*   `aula_05_otimizacao_ensamble/`: Contém os notebooks da Aula 5, focando em Álgebra Linear aplicada (Autovetores), PCA e técnicas de redução de dimensionalidade (UMAP).
+    *   `01_animacao_autovetores_monalisa.ipynb`: Animação didática sobre autovetores e autovalores utilizando a imagem da Mona Lisa.
+    *   `02_animacao_geometria_autovetores.ipynb`: Script visual explorando a geometria por trás das transformações lineares.
+    *   `03_figura_pca_ames_housing.ipynb`: Aplicação prática de PCA para redução de dimensionalidade no dataset Ames Housing.
+    *   `04_figura_pca_2d.ipynb`: Visualização simplificada de projeções PCA em 2D.
+    *   `05_figura_pca_vs_lda.ipynb`: Comparação visual entre PCA (não supervisionado) e LDA (supervisionado).
+    *   `06_figura_swiss_roll_umap.ipynb`: Exemplo de desdobramento de manifold não linear (Swiss Roll) utilizando UMAP.
 *   `data/`: Diretório ignorado no versionamento (`.gitignore`) que deverá abrigar os conjuntos de dados utilizados nos laboratórios (ver seção *Datasets* abaixo).
 *   `outputs/`: Diretório destinado ao armazenamento de gráficos e resultados gerados durante a execução dos scripts (ex: `outputs/figures/`).
+
+> Os arquivos com o prefixo `figura_` são scripts focados na produção de figuras didáticas para o material da disciplina.
 
 ## 📊 Datasets
 
@@ -29,6 +38,9 @@ Para executar os notebooks que dependem de dados reais, você deverá baixar os 
     * O dataset de preços de imóveis utilizado em nossos estudos é oriundo de uma competição do Kaggle. 
     * Link para download: [House Prices - Advanced Regression Techniques (Kaggle)](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)
     * Baixe o arquivo e extraia-o dentro de uma subpasta (ex: `data/ames_housing/`).
+*   **Mona Lisa Sample Image:**
+    * Utilizada para demonstração de transformações lineares na Aula 5. 
+    * O script tenta baixar automaticamente, mas caso falhe, salve uma versão da imagem em `data/mona_lisa_sample.jpg`.
 
 ## 🚀 Como Executar os Laboratórios
 
